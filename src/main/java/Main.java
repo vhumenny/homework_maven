@@ -3,6 +3,7 @@ import logger.Logger;
 import logger.stdOutLogger.StdoutLogger;
 import logger.stdOutLogger.StdoutLoggerConfigurationLoader;
 
+import java.net.URI;
 import java.util.Scanner;
 
 public class Main {
@@ -13,8 +14,9 @@ public class Main {
     }
 
     public static void start() {
-        String path = "src/main/java/org/example/logger/configuration/logging.properties";
-        Logger logger = new StdoutLogger(new StdoutLoggerConfigurationLoader().load(path));
+        String path = "logging.properties";
+        Logger logger = new StdoutLogger(new StdoutLoggerConfigurationLoader().
+                load(URI.create(String.valueOf(Main.class.getResource(path)))));
         Scanner scanner = new Scanner(System.in);
         MathLibrary mathLibrary = new MathLibrary();
         logger.info("""

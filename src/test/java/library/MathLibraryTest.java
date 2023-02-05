@@ -1,4 +1,4 @@
-package org.example;
+package library;
 
 import library.MathLibrary;
 import logger.Logger;
@@ -7,12 +7,14 @@ import logger.stdOutLogger.StdoutLoggerConfigurationLoader;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.net.URI;
+
 
 class MathLibraryTest {
     MathLibrary mathLibrary;
 
-    String path = "src/main/java/logger/configuration/logging.properties";
-    Logger logger = new StdoutLogger(new StdoutLoggerConfigurationLoader().load(path));
+    String path = "src/main/resources/logging.properties";
+    Logger logger = new StdoutLogger(new StdoutLoggerConfigurationLoader().load(URI.create(path)));
 
     @BeforeEach
     public void beforeEachTestMethod() {
