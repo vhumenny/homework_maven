@@ -1,7 +1,7 @@
-package org.example.logger.stdOutLogger;
+package logger.stdOutLogger;
 
-import org.example.logger.LoggerConfiguration;
-import org.example.logger.LoggingLevel;
+import logger.LoggerConfiguration;
+import logger.LoggingLevel;
 
 import java.text.MessageFormat;
 

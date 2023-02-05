@@ -1,8 +1,7 @@
-package org.example;
-
-import org.example.logger.Logger;
-import org.example.logger.stdOutLogger.StdoutLogger;
-import org.example.logger.stdOutLogger.StdoutLoggerConfigurationLoader;
+import library.MathLibrary;
+import logger.Logger;
+import logger.stdOutLogger.StdoutLogger;
+import logger.stdOutLogger.StdoutLoggerConfigurationLoader;
 
 import java.util.Scanner;
 

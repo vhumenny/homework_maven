@@ -1,4 +1,4 @@
-package org.example.logger.exception;
+package logger.exception;
 
 public class FileMaxSizeReachedException extends Exception {
 

@@ -1,4 +1,6 @@
-package org.example.logger;
+package logger;
+
+import logger.LoggerConfiguration;
 
 public abstract class LoggerConfigurationLoader {
 

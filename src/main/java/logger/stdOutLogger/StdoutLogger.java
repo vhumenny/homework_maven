@@ -1,7 +1,7 @@
-package org.example.logger.stdOutLogger;
+package logger.stdOutLogger;
 
-import org.example.logger.Logger;
-import org.example.logger.LoggingLevel;
+import logger.Logger;
+import logger.LoggingLevel;
 
 import java.util.Date;
 

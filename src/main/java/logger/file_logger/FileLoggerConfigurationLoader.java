@@ -1,7 +1,7 @@
-package org.example.logger.file_logger;
+package logger.file_logger;
 
-import org.example.logger.LoggerConfigurationLoader;
-import org.example.logger.LoggingLevel;
+import logger.LoggerConfigurationLoader;
+import logger.LoggingLevel;
 
 import java.io.BufferedReader;
 import java.io.File;

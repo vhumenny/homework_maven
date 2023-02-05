@@ -1,4 +1,4 @@
-package org.example;
+package library;
 
 public class MathLibrary {
 

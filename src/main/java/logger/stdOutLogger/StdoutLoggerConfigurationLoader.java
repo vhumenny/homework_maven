@@ -1,7 +1,7 @@
-package org.example.logger.stdOutLogger;
+package logger.stdOutLogger;
 
-import org.example.logger.LoggerConfigurationLoader;
-import org.example.logger.LoggingLevel;
+import logger.LoggerConfigurationLoader;
+import logger.LoggingLevel;
 
 import java.io.FileReader;
 import java.io.IOException;

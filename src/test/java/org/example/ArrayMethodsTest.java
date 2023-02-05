@@ -1,8 +1,9 @@
 package org.example;
 
-import org.example.logger.Logger;
-import org.example.logger.stdOutLogger.StdoutLogger;
-import org.example.logger.stdOutLogger.StdoutLoggerConfigurationLoader;
+import library.ArrayMethods;
+import logger.Logger;
+import logger.stdOutLogger.StdoutLogger;
+import logger.stdOutLogger.StdoutLoggerConfigurationLoader;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +12,7 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ArrayMethodsTest {
-    String path = "src/main/java/org/example/logger/configuration/logging.properties";
+    String path = "src/main/java/logger/configuration/logging.properties";
     Logger logger = new StdoutLogger(new StdoutLoggerConfigurationLoader().load(path));
 
     ArrayMethods arrayMethods;

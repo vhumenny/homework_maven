@@ -1,8 +1,9 @@
 package org.example;
 
-import org.example.logger.Logger;
-import org.example.logger.stdOutLogger.StdoutLogger;
-import org.example.logger.stdOutLogger.StdoutLoggerConfigurationLoader;
+import library.MathLibrary;
+import logger.Logger;
+import logger.stdOutLogger.StdoutLogger;
+import logger.stdOutLogger.StdoutLoggerConfigurationLoader;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -10,7 +11,7 @@ import org.junit.jupiter.api.Test;
 class MathLibraryTest {
     MathLibrary mathLibrary;
 
-    String path = "src/main/java/org/example/logger/configuration/logging.properties";
+    String path = "src/main/java/logger/configuration/logging.properties";
     Logger logger = new StdoutLogger(new StdoutLoggerConfigurationLoader().load(path));
 
     @BeforeEach

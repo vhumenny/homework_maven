@@ -1,4 +1,4 @@
-package org.example.logger;
+package logger;
 
 public enum LoggingLevel {
     DEBUG,

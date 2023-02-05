@@ -1,7 +1,7 @@
-package org.example.logger.file_logger;
+package logger.file_logger;
 
-import org.example.logger.LoggerConfiguration;
-import org.example.logger.LoggingLevel;
+import logger.LoggerConfiguration;
+import logger.LoggingLevel;
 
 import java.io.File;
 import java.text.MessageFormat;
