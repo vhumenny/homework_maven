@@ -3,8 +3,7 @@ package logger.stdOutLogger;
 import logger.LoggerConfigurationLoader;
 import logger.LoggingLevel;
 
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.net.URI;
 import java.text.MessageFormat;
 import java.util.Properties;
@@ -12,10 +11,9 @@ import java.util.Properties;
 public class StdoutLoggerConfigurationLoader extends LoggerConfigurationLoader {
 
     @Override
-    public StdoutLoggerConfiguration load(URI path) {
-        Properties property = new Properties();
-
-        try (FileReader fileReader = new FileReader(path.getPath())) {
+    public StdoutLoggerConfiguration load(InputStream stream) {
+        try (Reader fileReader = new InputStreamReader(stream)) {
+            Properties property = new Properties();
             property.load(fileReader);
             return new StdoutLoggerConfiguration(
             LoggingLevel.valueOf(property.getProperty("LEVEL")),

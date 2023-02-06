@@ -13,8 +13,8 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ArrayMethodsTest {
-    String path = "src/main/resources/logging.properties";
-    Logger logger = new StdoutLogger(new StdoutLoggerConfigurationLoader().load(URI.create(path)));
+    Logger logger = new StdoutLogger(new StdoutLoggerConfigurationLoader().load(getClass().getClassLoader().
+            getResourceAsStream("logging.properties")));
 
     ArrayMethods arrayMethods;
 

@@ -16,7 +16,7 @@ public class Main {
     public static void start() {
         String path = "logging.properties";
         Logger logger = new StdoutLogger(new StdoutLoggerConfigurationLoader().
-                load(URI.create(String.valueOf(Main.class.getResource(path)))));
+                load(Main.class.getResourceAsStream(path)));
         Scanner scanner = new Scanner(System.in);
         MathLibrary mathLibrary = new MathLibrary();
         logger.info("""
